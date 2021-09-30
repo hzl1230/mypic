@@ -1,0 +1,9 @@
+domain    0 264.566 0 264.566 0 1
+num_cells 100 100 1
+tile      8 8 1
+field_bc type  n n s n p p &
+         value 0 0 0 0 0 0
+part_bc type   v v r v p p
+conductor rectangle type real &
+ position -2 1e-8 0. 10. 0. 0. &
+ potential fixed 0.
