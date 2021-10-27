@@ -1,0 +1,13 @@
+dimension 2d
+seed      default
+steps     1000000
+timestep  0.131562
+screen    100
+model     full
+solver    poisson lu
+diag      field/matlab 100000 100000 100000 &
+          potential number_density species all &
+          velocity species p components x y z &
+          temperature species e components x y z
+read_restart false
+write_restart 400000
